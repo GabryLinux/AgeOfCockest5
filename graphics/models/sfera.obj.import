@@ -1,0 +1,21 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://cm8c78yiiyhmg"
+path="res://.godot/imported/sfera.obj-c683acd6bead75e7bece1f1e5c366e27.mesh"
+
+[deps]
+
+files=["res://.godot/imported/sfera.obj-c683acd6bead75e7bece1f1e5c366e27.mesh"]
+
+source_file="res://graphics/models/sfera.obj"
+dest_files=["res://.godot/imported/sfera.obj-c683acd6bead75e7bece1f1e5c366e27.mesh", "res://.godot/imported/sfera.obj-c683acd6bead75e7bece1f1e5c366e27.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true

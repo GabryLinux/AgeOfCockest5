@@ -1,3 +1,17 @@
-[gd_scene format=3 uid="uid://dbt86v3cehipv"]
+[gd_scene load_steps=3 format=3 uid="uid://dbt86v3cehipv"]
 
-[node name="Node2D" type="Node2D"]
+[ext_resource type="ArrayMesh" uid="uid://b4tfqho6q0cub" path="res://graphics/models/cubo.obj" id="3_dqu7i"]
+[ext_resource type="Script" path="res://graphics/script/Cubo.gd" id="4_u08fi"]
+
+[node name="Node3D" type="Node3D"]
+
+[node name="Cubo" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -78.5428, 24.4024, -66.3795)
+mesh = ExtResource("3_dqu7i")
+script = ExtResource("4_u08fi")
+
+[node name="Camera3D" type="Camera3D" parent="."]
+transform = Transform3D(0.538771, 0.218043, -0.813747, 0, 0.965926, 0.258819, 0.842452, -0.139444, 0.520413, -272.717, 145.648, 74.306)
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 264.126, 180.098)
