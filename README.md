@@ -83,3 +83,6 @@
 <p><strong>CULO</strong></p>
 <p><strong>SENZA</strong></p>
 <p><strong>SOSTA</strong></p>
+<p><strong><img src="./Big_Brother_1984.jpg" alt="" /></strong></p>
+<p><strong>TRUST THE PROCESS</strong></p>
+<p>grazie per l'attenzione e buon lavoro.</p>
