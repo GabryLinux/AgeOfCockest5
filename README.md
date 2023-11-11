@@ -1,12 +1,12 @@
 <h1>Age of Cockest 5</h1>
 <p><strong><img src="./Big_Brother_1984.jpg" alt="" /></strong></p>
-<blockquote><em>"Il tempo per i giochi &egrave; finito. Ora &egrave; il tempo di fare il gioco"&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</em></blockquote>
+<blockquote><em>"Il tempo per i giochi &egrave; finito. Ora &egrave; tempo di fare il gioco"&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</em></blockquote>
 <div style="text-align: right;"><em>cit. Qualcuno</em></div>
 <div style="text-align: right;">&nbsp;</div>
 
 <p>Lo sviluppo va a rilento ma non &egrave; momento di droppare tutto. Ci serve solo una <strong>migliore strutturazione del progetto</strong> e <strong>compiti specifici </strong>per poter progredire.</p>
 <p>&nbsp;</p>
-<p>Ho cercato di realizzare entrambi:</p>
+
 <h2>1. Struttura del Progetto</h2>
 <p style="padding-left: 40px;">Ho dato (finalmente) struttura alla directory del progetto; si presenta nella seguente maniera:</p>
 <pre style="padding-left: 40px;"><code>.
@@ -42,13 +42,13 @@
 <ul style="padding-left: 80px;">
 <li>i personaggi (<code>characters</code>), coi loro modelli e animazioni (<code>models</code>) e <code>script </code>che li riguarda,</li>
 <li>la <code>mappa</code>, con modelli 3D e script che manipolano il terreno di gioco e l'ambiente</li>
-<li><code>UI</code>, ossia i bottoni che governano tutta l'interfaccia di gioco, tramite la quale il giocatore pu&ograve; controllare il proprio impero, risorse e diplomazia. Gli <code>examples</code> sono le immagini d'esempio dal quale prendere ispirazione per la realizzazione del vero e proprio ui. <code>Ideas </code>&egrave; la cartella di immagini di abbozzi di UI del gioco. <code>Script</code> &egrave; la cartella degli script</li>
+<li><code>UI</code>, ossia i bottoni che governano tutta l'interfaccia di gioco, tramite la quale il giocatore pu&ograve; controllare il proprio impero, risorse e diplomazia. Gli <code>examples</code> sono le immagini d'esempio dal quale prendere ispirazione per la realizzazione del vero e proprio ui. <code>Ideas</code> &egrave; la cartella di immagini di abbozzi di UI del gioco. <code>Script</code> &egrave; la cartella degli script</li>
 </ul>
 </li>
 <li><code>menu</code> &egrave; la cartella che riguarda il men&ugrave; di gioco, ossia le immagini e gli script che controllano i comportamenti dei bottoni</li>
 <li><code>network</code> &egrave; la cartella in cui successivamente caricare tutta la gestione client del server (To Be Defined)</li>
 </ul>
-<h3>&nbsp;</h3>
+<p>&nbsp;</p>
 <h2>2. Compiti da Assegnare</h2>
 <p>Ho deciso di suddividere i compiti (<strong>in ordine di priorit&agrave;</strong>) seguendo la struttura della directory che ho costruito:</p>
 <h3 style="padding-left: 40px;">- Game Graphic:</h3>
@@ -76,7 +76,7 @@
 <li>implementare <strong>bottoni </strong>e <strong>navigazione </strong>tra men&ugrave;</li>
 <li>Sviluppare man mano le altre scene o anche solo <strong>abbozzarle</strong></li>
 </ol>
-
+<p>&nbsp;</p>
 <h2>Considerazioni Finali</h2>
 <p>Chiunque pu&ograve; prendere i compiti che vuole <strong>ma&nbsp;</strong>bisogna considerare che : Bruno e Demetrio lavorano gi&agrave; alla UI, il <strong>Sottoscritto </strong>e Nicolas lavoriamo alla game graphic (<strong>io</strong> ai modelli 3d/ambiente, nicolas alla generazione della mappa). Per qualsiasi cosa, chiedere sul gruppo o personalmente a me.</p>
 <p>I compiti che ho elencato <strong>NON SONO QUELLI DEFINITIVI</strong>; man mano che procediamo con lo sviluppo avremo una visione pi&ugrave; specifica e meno generale del progetto, cos&igrave; da poter dare compiti sempre pi&ugrave; mirati e meno generici. La "developing curve" per ora &egrave; ripida, dovremo fare sacrifici; &egrave; quando scaleremo le prime vette che potremo apprezzare la strada percorsa e <strong>ballare la fresca </strong>, ma fino ad allora&nbsp;</p>
