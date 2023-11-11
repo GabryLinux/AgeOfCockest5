@@ -50,8 +50,7 @@
 <h2>2. Compiti da Assegnare</h2>
 <p>Ho deciso di suddividere i compiti (<strong>in ordine di priorit&agrave;</strong>) seguendo la struttura della directory che ho costruito:</p>
 <h3 style="padding-left: 40px;">- Game Graphic:</h3>
-<ol>
-<li style="list-style-type: none;">
+
 <ol>
 <li>Fornire <strong>Mesh mappa 3D</strong></li>
 <li>Impostare <strong>telecamera</strong>, <strong>angolazione </strong>mappa e <strong>illuminazione</strong></li>
@@ -64,12 +63,9 @@
 <li>Fornire <strong>algoritmo </strong>di <strong>generazione </strong>e <strong>partizionamento </strong>casuale di <strong>mappe</strong>, con altrettanta distribuzione casuale di risorse</li>
 <li><strong>Editor delle mappe</strong> per la comunit&agrave;</li>
 </ol>
-</li>
-</ol>
 <p>&nbsp;</p>
 <h3 style="padding-left: 40px;">- Menu:</h3>
-<ol>
-<li style="list-style-type: none;">
+
 <ol>
 <li>Dare <strong>Struttura all'albero </strong>delle scene dei menu</li>
 <li>Sviluppare scena <strong>menu principale</strong></li>
@@ -78,8 +74,7 @@
 <li>implementare <strong>bottoni </strong>e <strong>navigazione </strong>tra men&ugrave;</li>
 <li>Sviluppare man mano le altre scene o anche solo <strong>abbozzarle</strong></li>
 </ol>
-</li>
-</ol>
+
 <h2>Considerazioni Finali</h2>
 <p>Chiunque pu&ograve; prendere i compiti che vuole <strong>ma&nbsp;</strong>bisogna considerare che : Bruno e Demetrio lavorano gi&agrave; alla UI, il <strong>Sottoscritto </strong>e Nicolas lavoriamo alla game graphic (<strong>io</strong> ai modelli 3d/ambiente, nicolas alla generazione della mappa). Per qualsiasi cosa, chiedere sul gruppo o personalmente a me.</p>
 <p>I compiti che ho elencato <strong>NON SONO QUELLI DEFINITIVI</strong>; man mano che procediamo con lo sviluppo avremo una visione pi&ugrave; specifica e meno generale del progetto, cos&igrave; da poter dare compiti sempre pi&ugrave; mirati e meno generici. La "developing curve" per ora &egrave; ripida, dovremo fare sacrifici; &egrave; quando scaleremo le prime vette che potremo apprezzare la strada percorsa e <strong>ballare la fresca </strong>, ma fino ad allora&nbsp;</p>
