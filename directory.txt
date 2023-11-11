@@ -1,0 +1,27 @@
+https://tree.nathanfriend.io/
+
+GodotProject
+  .godot
+  gamegraphic
+    characters
+      models
+      script
+    map
+      models
+      script
+    UI
+      examples
+      ideas
+      script
+  menu
+    img
+    script
+  network
+    TBD
+  .gitattributes
+  .gitignore
+  icon.svg
+  icon.svg.import
+  node_2d.tscn
+  project.godot
+  README.md
