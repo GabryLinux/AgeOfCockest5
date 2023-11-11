@@ -1,7 +1,9 @@
 <h1>Age of Cockest 5</h1>
+<p><strong><img src="./Big_Brother_1984.jpg" alt="" /></strong></p>
 <blockquote><em>"Il tempo per i giochi &egrave; finito. Ora &egrave; il tempo di fare il gioco"&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</em></blockquote>
 <div style="text-align: right;"><em>cit. Qualcuno</em></div>
 <div style="text-align: right;">&nbsp;</div>
+
 <p>Lo sviluppo va a rilento ma non &egrave; momento di droppare tutto. Ci serve solo una <strong>migliore strutturazione del progetto</strong> e <strong>compiti specifici </strong>per poter progredire.</p>
 <p>&nbsp;</p>
 <p>Ho cercato di realizzare entrambi:</p>
@@ -83,6 +85,5 @@
 <p><strong>CULO</strong></p>
 <p><strong>SENZA</strong></p>
 <p><strong>SOSTA</strong></p>
-<p><strong><img src="./Big_Brother_1984.jpg" alt="" /></strong></p>
 <p><strong>TRUST THE PROCESS</strong></p>
 <p>grazie per l'attenzione e buon lavoro.</p>
