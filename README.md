@@ -60,37 +60,37 @@
 <p>Ho deciso di suddividere i compiti (<strong>in ordine di priorit&agrave;</strong>) seguendo la struttura della
     directory che ho costruito:</p>
 <h3 style="padding-left: 40px;">- Game Graphic:</h3>
+
+
 <ol>
-    <li style="list-style-type: none;">
-        <ol>
-            <li>Fornire Mesh mappa 3D</li>
-            <li>Impostare telecamera, angolazione mappa e illuminazione</li>
-            <li>Fornire modelli 3D (in assenza di un vero e proprio character system, possiamo pure usarne a piacere,
-                saranno solo a scopo di progettazione)</li>
-            <li>Elaborare sistema movimento personaggio da un punto ad un altro&nbsp;</li>
-            <li>Studiare principi di Design della UI di videogiochi</li>
-            <li>Trovare idee per Design della UI, cercando da internet foto di altri giochi. Abbozzare poi, usando
-                magari software online, il design della UI (possibilmente chi segue il il precedente dovrebbe seguire
-                pure questo punto)</li>
-            <li>Mettere texture e/o materiali alla mappa</li>
-            <li>Fornire animazioni dei Modelli&nbsp;</li>
-        </ol>
-    </li>
+    <li>Fornire Mesh mappa 3D</li>
+    <li>Impostare telecamera, angolazione mappa e illuminazione</li>
+    <li>Fornire modelli 3D (in assenza di un vero e proprio character system, possiamo pure usarne a piacere,
+        saranno solo a scopo di progettazione)</li>
+    <li>Elaborare sistema movimento personaggio da un punto ad un altro&nbsp;</li>
+    <li>Studiare principi di Design della UI di videogiochi</li>
+    <li>Trovare idee per Design della UI, cercando da internet foto di altri giochi. Abbozzare poi, usando
+        magari software online, il design della UI (possibilmente chi segue il il precedente dovrebbe seguire
+        pure questo punto)</li>
+    <li>Mettere texture e/o materiali alla mappa</li>
+    <li>Fornire animazioni dei Modelli&nbsp;</li>
 </ol>
+
+
 <p>&nbsp;</p>
 <h3 style="padding-left: 40px;">- Menu:</h3>
+
+
 <ol>
-    <li style="list-style-type: none;">
-        <ol>
-            <li>Dare Struttura all'albero delle scene dei menu</li>
-            <li>Sviluppare scena menu principale</li>
-            <li>Sviluppare scena menu scelta gioco (single/multiplayer)</li>
-            <li>Sviluppare scena menu impostazioni</li>
-            <li>implementare bottoni e navigazione tra men&ugrave;</li>
-            <li>Sviluppare man mano le altre scene o anche solo abbozzarle</li>
-        </ol>
-    </li>
+    <li>Dare Struttura all'albero delle scene dei menu</li>
+    <li>Sviluppare scena menu principale</li>
+    <li>Sviluppare scena menu scelta gioco (single/multiplayer)</li>
+    <li>Sviluppare scena menu impostazioni</li>
+    <li>implementare bottoni e navigazione tra men&ugrave;</li>
+    <li>Sviluppare man mano le altre scene o anche solo abbozzarle</li>
 </ol>
+
+
 <h2>Considerazioni Finali</h2>
 <p>I compiti che ho elencato <strong>NON SONO QUELLI DEFINITIVI</strong>; man mano che procediamo con lo sviluppo avremo
     una visione pi&ugrave; specifica e meno generale del progetto, cos&igrave; da poter dare compiti sempre pi&ugrave;
@@ -101,9 +101,6 @@
 <p><strong>CULO</strong></p>
 <p><strong>SENZA</strong></p>
 <p><strong>SOSTA</strong></p>
-<p><strong><img
-            src="./Big_Brother_1984.jpg"
-            alt="" /></strong></p>
+<p><strong><img src="./Big_Brother_1984.jpg" alt="" /></strong></p>
 <p><strong>TRUST THE PROCESS</strong></p>
 <p>grazie per l'attenzione e buon lavoro.</p>
- 
