@@ -4,14 +4,14 @@ importer="wavefront_obj"
 importer_version=1
 type="Mesh"
 uid="uid://b4tfqho6q0cub"
-path="res://.godot/imported/cubo.obj-667ee17a4d4df849c69220aaf503d840.mesh"
+path="res://.godot/imported/cubo.obj-c25986caf32a6f63ab594a92ca1d2d50.mesh"
 
 [deps]
 
-files=["res://.godot/imported/cubo.obj-667ee17a4d4df849c69220aaf503d840.mesh"]
+files=["res://.godot/imported/cubo.obj-c25986caf32a6f63ab594a92ca1d2d50.mesh"]
 
-source_file="res://graphics/models/cubo.obj"
-dest_files=["res://.godot/imported/cubo.obj-667ee17a4d4df849c69220aaf503d840.mesh", "res://.godot/imported/cubo.obj-667ee17a4d4df849c69220aaf503d840.mesh"]
+source_file="res://gamegraphic/characters/models/cubo.obj"
+dest_files=["res://.godot/imported/cubo.obj-c25986caf32a6f63ab594a92ca1d2d50.mesh", "res://.godot/imported/cubo.obj-c25986caf32a6f63ab594a92ca1d2d50.mesh"]
 
 [params]
 

@@ -1,7 +1,7 @@
 [gd_scene load_steps=3 format=3 uid="uid://dbt86v3cehipv"]
 
-[ext_resource type="ArrayMesh" uid="uid://b4tfqho6q0cub" path="res://graphics/models/cubo.obj" id="3_dqu7i"]
-[ext_resource type="Script" path="res://graphics/script/Cubo.gd" id="4_u08fi"]
+[ext_resource type="ArrayMesh" uid="uid://b4tfqho6q0cub" path="res://gamegraphic/characters/models/cubo.obj" id="3_dqu7i"]
+[ext_resource type="Script" path="res://gamegraphic/characters/script/Cubo.gd" id="4_u08fi"]
 
 [node name="Node3D" type="Node3D"]
 

@@ -4,14 +4,14 @@ importer="wavefront_obj"
 importer_version=1
 type="Mesh"
 uid="uid://cm8c78yiiyhmg"
-path="res://.godot/imported/sfera.obj-c683acd6bead75e7bece1f1e5c366e27.mesh"
+path="res://.godot/imported/sfera.obj-903473db0570c29b0e5f5cf1a351a0c5.mesh"
 
 [deps]
 
-files=["res://.godot/imported/sfera.obj-c683acd6bead75e7bece1f1e5c366e27.mesh"]
+files=["res://.godot/imported/sfera.obj-903473db0570c29b0e5f5cf1a351a0c5.mesh"]
 
-source_file="res://graphics/models/sfera.obj"
-dest_files=["res://.godot/imported/sfera.obj-c683acd6bead75e7bece1f1e5c366e27.mesh", "res://.godot/imported/sfera.obj-c683acd6bead75e7bece1f1e5c366e27.mesh"]
+source_file="res://gamegraphic/characters/models/sfera.obj"
+dest_files=["res://.godot/imported/sfera.obj-903473db0570c29b0e5f5cf1a351a0c5.mesh", "res://.godot/imported/sfera.obj-903473db0570c29b0e5f5cf1a351a0c5.mesh"]
 
 [params]
 
