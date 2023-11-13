@@ -2,9 +2,10 @@ extends MeshInstance3D
 
 var coords = [
 	Coord.new(0,0),
-	Coord.new(20,10),
-	Coord.new(140,30),
-	Coord.new(140,70)
+	Coord.new(-66,-8),
+	Coord.new(-33,67),
+	Coord.new(60,30),
+	Coord.new(-150,40)
 ]		
 
 
@@ -13,7 +14,7 @@ var coords = [
 func _ready():
 	pass # Replace with function body.
 
-var i = 0
+var i = 1
 
 # esempio di uso della classe InterpoledTranslation
 func _unhandled_input(event):
@@ -23,9 +24,9 @@ func _unhandled_input(event):
 		event.is_pressed() and 
 		event.button_index == MOUSE_BUTTON_LEFT
 	):
-		var v = Vector3(coords[i].x,0, coords[i].y)
-		InterpoledTranslation.animate(get_node("."),v)
-		i = (i + 1) % ar.size()
+		#var v = Vector3(coords[i].x,0, coords[i].y)
+		InterpoledTranslation.animate(get_node("."),coords[i  % ar.size()])
+		i = (i + 1)
 		
 
 func _process(delta):
