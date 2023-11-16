@@ -1,0 +1,45 @@
+[gd_scene load_steps=2 format=3 uid="uid://cor5rwj8pvnsn"]
+
+[ext_resource type="Script" path="res://UI interface/main menu/single player menu/indietro.gd" id="1_v0b3k"]
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="indietro2" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 62.0
+offset_top = -274.0
+offset_right = 256.0
+offset_bottom = -204.0
+grow_vertical = 2
+theme_override_font_sizes/font_size = 30
+text = "<---"
+script = ExtResource("1_v0b3k")
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 0
+offset_left = 276.0
+offset_top = 159.0
+offset_right = 868.0
+offset_bottom = 473.0
+text = "CREDITS
+impiegato del mese: roman
+il più gay: favazzi
+il più terrorista e anti azero: choba
+l'unico che ha passato analisi 2: Demetrio
+Il più indietro con l'uni con pensieri suicidi: Bruno
+L'unico che effettivamente lavora:
+(e i quali suoi lavori sono costantemente rubati da favazzi 
+che se ne prende i meriti sensa consenso alcuno)
+  Nicolas"
+horizontal_alignment = 1
+
+[connection signal="pressed" from="indietro2" to="indietro2" method="_on_pressed"]

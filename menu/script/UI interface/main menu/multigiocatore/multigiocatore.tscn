@@ -1,0 +1,124 @@
+[gd_scene load_steps=2 format=3 uid="uid://b2lqah1eplen3"]
+
+[ext_resource type="Script" path="res://UI interface/main menu/single player menu/indietro.gd" id="1_8dbf2"]
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+metadata/_edit_lock_ = true
+
+[node name="indietro2" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 72.0
+offset_top = -276.0
+offset_right = 266.0
+offset_bottom = -206.0
+grow_vertical = 2
+theme_override_font_sizes/font_size = 30
+text = "<---"
+script = ExtResource("1_8dbf2")
+
+[node name="nuova partita" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -150.0
+offset_top = -223.0
+offset_right = 126.0
+offset_bottom = -166.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "crea partita"
+
+[node name="nuova partita2" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -150.0
+offset_top = -84.0
+offset_right = 126.0
+offset_bottom = -27.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "eventi
+"
+
+[node name="nuova partita3" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -150.0
+offset_top = -153.5
+offset_right = 126.0
+offset_bottom = -96.5
+grow_horizontal = 2
+grow_vertical = 2
+text = "partecipa partita"
+
+[node name="chat" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = 6
+anchor_left = 1.0
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_left = -33.0
+offset_top = -101.0
+offset_right = -2.0
+offset_bottom = 40.0
+grow_horizontal = 0
+grow_vertical = 2
+text = "C
+H
+A
+T"
+
+[node name="profilo" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = 6
+anchor_left = 1.0
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_left = -240.0
+offset_top = -300.0
+offset_right = -195.0
+offset_bottom = -258.0
+grow_horizontal = 0
+grow_vertical = 2
+text = "P"
+
+[node name="classifiche" type="Button" parent="."]
+layout_mode = 0
+offset_left = 520.0
+offset_top = 336.0
+offset_right = 609.0
+offset_bottom = 399.0
+text = "RANK
+"
+
+[node name="Button" type="Button" parent="."]
+layout_mode = 0
+offset_left = 992.0
+offset_top = 24.0
+offset_right = 1063.0
+offset_bottom = 64.0
+text = "SOLDI"
+
+[connection signal="pressed" from="indietro2" to="indietro2" method="_on_pressed"]
