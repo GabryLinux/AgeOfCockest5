@@ -1,10 +1,12 @@
-[gd_scene load_steps=10 format=3 uid="uid://dbt86v3cehipv"]
+[gd_scene load_steps=12 format=3 uid="uid://dbt86v3cehipv"]
 
 [ext_resource type="ArrayMesh" uid="uid://b4tfqho6q0cub" path="res://gamegraphic/characters/models/cubo.obj" id="3_dqu7i"]
+[ext_resource type="Script" path="res://moving.gd" id="3_kphlq"]
 [ext_resource type="PackedScene" uid="uid://dwkh4ekipl1wo" path="res://gamegraphic/map/models/mapExample.glb" id="3_li2yr"]
 [ext_resource type="PackedScene" uid="uid://dypu1kw0du3ps" path="res://gamegraphic/map/models/mapExample.gltf" id="4_8ogas"]
 [ext_resource type="Script" path="res://gamegraphic/characters/script/Cubo.gd" id="4_u08fi"]
 [ext_resource type="PackedScene" uid="uid://cvxgmt3q22s2a" path="res://gamegraphic/map/models/nuovaMappaExample.gltf" id="5_2lqjg"]
+[ext_resource type="PackedScene" uid="uid://d2yjmmainquvi" path="res://gamegraphic/map/models/mappaTassellata.gltf" id="7_yue3m"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_ajjli"]
 sky_top_color = Color(0.819608, 0.85098, 0.898039, 1)
@@ -26,13 +28,15 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -79.0213)
 
 [node name="Cubo" type="MeshInstance3D" parent="."]
 transform = Transform3D(0.25, 0, 0, 0, 0.25, 0, 0, 0, 0.25, 0, 0, 0)
+visible = false
 mesh = ExtResource("3_dqu7i")
 script = ExtResource("4_u08fi")
 
 [node name="Camera3D" type="Camera3D" parent="."]
-transform = Transform3D(-0.0705747, 0.539992, -0.838706, 9.31323e-10, 0.840803, 0.541341, 0.997506, 0.038205, -0.0593394, -340.256, 211.644, -23.0789)
+transform = Transform3D(1, 0, 0, 0, 0.5, 0.866025, 0, -0.866025, 0.5, 22.444, 32.7174, 118.653)
 current = true
 fov = 45.0
+script = ExtResource("3_kphlq")
 
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.67667, 297.418, 16.5697)
@@ -53,3 +57,9 @@ camera_attributes = SubResource("CameraAttributesPhysical_vrgre")
 
 [node name="nuovaMappaExample" parent="." instance=ExtResource("5_2lqjg")]
 transform = Transform3D(-20, 1.74846e-06, 0, -1.74846e-06, -20, 0, 0, 0, 20, 4.19858, -1.60118, -1.22221)
+visible = false
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+
+[node name="mappaTassellata" parent="." instance=ExtResource("7_yue3m")]
+transform = Transform3D(100, 0, 0, 0, 100, 0, 0, 0, 100, 0, 0, 80.1742)
