@@ -1,0 +1,97 @@
+[gd_scene load_steps=6 format=3 uid="uid://u7ht22v8wx7i"]
+
+[ext_resource type="Script" path="res://UI interface/main menu/single player menu/single player.gd" id="1_pylpn"]
+[ext_resource type="Script" path="res://UI interface/main menu/multigiocatore/multigiocatore.gd" id="2_m35a8"]
+[ext_resource type="Script" path="res://UI interface/main menu/crediti/credits.gd" id="2_yb5yo"]
+[ext_resource type="Script" path="res://UI interface/main menu/impostazioni/impostazioni.gd" id="3_sk4ar"]
+
+[sub_resource type="GDScript" id="GDScript_chaow"]
+script/source = "extends Button
+
+func _on_pressed():
+login
+"
+
+[node name="main menu" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+metadata/_edit_lock_ = true
+
+[node name="single player" type="Button" parent="."]
+layout_mode = 2
+offset_left = 457.0
+offset_top = 173.0
+offset_right = 709.0
+offset_bottom = 229.0
+text = "Single player"
+script = ExtResource("1_pylpn")
+
+[node name="login" type="Button" parent="."]
+layout_mode = 2
+offset_left = 833.0
+offset_top = 174.0
+offset_right = 880.0
+offset_bottom = 222.0
+text = "L"
+script = SubResource("GDScript_chaow")
+
+[node name="credits" type="Button" parent="."]
+layout_mode = 2
+offset_left = 832.0
+offset_top = 236.0
+offset_right = 881.0
+offset_bottom = 279.0
+text = "C"
+script = ExtResource("2_yb5yo")
+
+[node name="multigiocatore" type="Button" parent="."]
+layout_mode = 2
+offset_left = 455.0
+offset_top = 242.0
+offset_right = 707.0
+offset_bottom = 300.0
+text = "multiplayer
+"
+script = ExtResource("2_m35a8")
+
+[node name="impostazioni" type="Button" parent="."]
+layout_mode = 2
+offset_left = 456.0
+offset_top = 312.0
+offset_right = 708.0
+offset_bottom = 367.0
+text = "impostazioni"
+script = ExtResource("3_sk4ar")
+
+[node name="editor" type="Button" parent="."]
+layout_mode = 2
+offset_left = 457.0
+offset_top = 378.0
+offset_right = 709.0
+offset_bottom = 438.0
+text = "editor 
+(non disponibile per ora)"
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 10
+anchor_right = 1.0
+offset_bottom = 106.0
+grow_horizontal = 2
+theme_override_colors/font_shadow_color = Color(1, 1, 1, 1)
+theme_override_font_sizes/font_size = 75
+text = "AGE OF COCKEST V"
+horizontal_alignment = 1
+vertical_alignment = 1
+metadata/_edit_use_anchors_ = true
+metadata/_edit_lock_ = true
+
+[connection signal="pressed" from="single player" to="single player" method="_on_pressed"]
+[connection signal="pressed" from="login" to="login" method="_on_pressed"]
+[connection signal="pressed" from="credits" to="credits" method="_on_pressed"]
+[connection signal="pressed" from="multigiocatore" to="multigiocatore" method="_on_pressed"]
+[connection signal="pressed" from="impostazioni" to="impostazioni" method="_on_pressed"]
