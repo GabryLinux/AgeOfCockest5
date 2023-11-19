@@ -1,0 +1,16 @@
+[gd_scene load_steps=2 format=3 uid="uid://wu1fydiorxl3"]
+
+[ext_resource type="PackedScene" uid="uid://cvxgmt3q22s2a" path="res://UI interface/godot mappa/nuovaMappaExample.gltf" id="1_g6if7"]
+
+[node name="nuovaMappaExample" instance=ExtResource("1_g6if7")]
+
+[node name="Plane_001" parent="." index="1"]
+transform = Transform3D(9.67993, 0, 0, 0, 9.67993, 0, 0, 0, 9.67993, 0, 0.0420768, 0)
+
+[node name="Camera3D" type="Camera3D" parent="." index="2"]
+transform = Transform3D(1, -5.32176e-13, -3.05143e-10, 3.05143e-10, 0.00349043, 0.999994, 5.32907e-13, -0.999994, 0.00349043, 0, 15, 0)
+fov = 75.9375
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="Camera3D" index="0"]
+transform = Transform3D(1, 0, 4.50622e-19, 0, 1, 0, 4.50622e-19, 0, 1, 9.32587e-15, -0.0172595, 6.00815e-05)
+light_energy = 0.543
