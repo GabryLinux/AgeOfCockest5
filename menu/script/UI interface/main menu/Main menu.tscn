@@ -1,6 +1,7 @@
-[gd_scene load_steps=5 format=3 uid="uid://u7ht22v8wx7i"]
+[gd_scene load_steps=6 format=3 uid="uid://u7ht22v8wx7i"]
 
 [ext_resource type="Script" path="res://menu/script/UI interface/main menu/single player menu/single player.gd" id="1_pylpn"]
+[ext_resource type="Script" path="res://menu/script/UI interface/main menu/login menu.gd" id="2_0q4rl"]
 [ext_resource type="Script" path="res://menu/script/UI interface/main menu/multigiocatore/multigiocatore.gd" id="2_m35a8"]
 [ext_resource type="Script" path="res://menu/script/UI interface/main menu/crediti/credits.gd" id="2_yb5yo"]
 [ext_resource type="Script" path="res://menu/script/UI interface/main menu/impostazioni/impostazioni.gd" id="3_sk4ar"]
@@ -30,6 +31,21 @@ offset_top = 174.0
 offset_right = 880.0
 offset_bottom = 222.0
 text = "L"
+
+[node name="login menu" type="Window" parent="login"]
+title = "login menu"
+position = Vector2i(750, 200)
+size = Vector2i(300, 250)
+visible = false
+script = ExtResource("2_0q4rl")
+
+[node name="dati login" type="Label" parent="login/login menu"]
+offset_right = 40.0
+offset_bottom = 23.0
+text = "Username:
+
+
+Password:"
 
 [node name="credits" type="Button" parent="."]
 layout_mode = 2
@@ -83,6 +99,8 @@ metadata/_edit_use_anchors_ = true
 metadata/_edit_lock_ = true
 
 [connection signal="pressed" from="single player" to="single player" method="_on_pressed"]
+[connection signal="pressed" from="login" to="login/login menu" method="_on_login_pressed"]
+[connection signal="close_requested" from="login/login menu" to="login/login menu" method="_on_close_requested"]
 [connection signal="pressed" from="credits" to="credits" method="_on_pressed"]
 [connection signal="pressed" from="multigiocatore" to="multigiocatore" method="_on_pressed"]
 [connection signal="pressed" from="impostazioni" to="impostazioni" method="_on_pressed"]

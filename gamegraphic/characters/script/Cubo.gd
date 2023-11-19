@@ -30,6 +30,6 @@ func _unhandled_input(event):
 		i = (i + 1)
 		
 
-func _process(delta):
+#func _process(delta):
 
-	pass
+	#pass
