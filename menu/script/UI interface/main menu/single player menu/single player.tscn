@@ -1,0 +1,155 @@
+[gd_scene load_steps=2 format=3 uid="uid://cptv8aymmk66d"]
+
+[ext_resource type="Script" path="res://UI interface/main menu/single player menu/indietro.gd" id="1_6bi33"]
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+metadata/_edit_lock_ = true
+
+[node name="indietro" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 53.0
+offset_top = -288.0
+offset_right = 247.0
+offset_bottom = -218.0
+grow_vertical = 2
+theme_override_font_sizes/font_size = 30
+text = "<---"
+script = ExtResource("1_6bi33")
+
+[node name="nuova partita" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -150.0
+offset_top = -223.0
+offset_right = 126.0
+offset_bottom = -166.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "Nuova partita"
+
+[node name="ColorRect" type="ColorRect" parent="."]
+layout_mode = 0
+offset_left = 230.0
+offset_top = 183.0
+offset_right = 917.0
+offset_bottom = 482.0
+color = Color(0.431373, 0.431373, 0.431373, 1)
+
+[node name="Label" type="Label" parent="ColorRect"]
+layout_mode = 1
+anchors_preset = 10
+anchor_right = 1.0
+offset_bottom = 23.0
+grow_horizontal = 2
+theme_override_font_sizes/font_size = 30
+text = "PARTITE IN CORSO"
+horizontal_alignment = 1
+
+[node name="Label2" type="Label" parent="ColorRect"]
+layout_mode = 0
+offset_left = 75.0
+offset_top = 85.0
+offset_right = 337.0
+offset_bottom = 111.0
+text = "Es partita 1"
+
+[node name="Label3" type="Label" parent="ColorRect"]
+layout_mode = 0
+offset_left = 75.0
+offset_top = 147.0
+offset_right = 337.0
+offset_bottom = 173.0
+text = "Es partita 2"
+
+[node name="riprendi" type="Button" parent="ColorRect"]
+layout_mode = 1
+anchors_preset = 6
+anchor_left = 1.0
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_left = -439.0
+offset_top = -72.5
+offset_right = -377.0
+offset_bottom = -35.5
+grow_horizontal = 0
+grow_vertical = 2
+text = "R"
+
+[node name="elimina" type="Button" parent="ColorRect"]
+layout_mode = 1
+anchors_preset = 6
+anchor_left = 1.0
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_left = -340.0
+offset_top = -73.5
+offset_right = -278.0
+offset_bottom = -36.5
+grow_horizontal = 0
+grow_vertical = 2
+text = "E"
+
+[node name="riprendi2" type="Button" parent="ColorRect"]
+layout_mode = 1
+anchors_preset = 6
+anchor_left = 1.0
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_left = -438.0
+offset_top = -6.5
+offset_right = -376.0
+offset_bottom = 30.5
+grow_horizontal = 0
+grow_vertical = 2
+text = "R"
+
+[node name="elimina2" type="Button" parent="ColorRect"]
+layout_mode = 1
+anchors_preset = 6
+anchor_left = 1.0
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_left = -339.0
+offset_top = -7.5
+offset_right = -277.0
+offset_bottom = 29.5
+grow_horizontal = 0
+grow_vertical = 2
+text = "E"
+
+[node name="tutorial" type="Button" parent="."]
+layout_mode = 0
+offset_left = 990.0
+offset_top = 94.0
+offset_right = 1070.0
+offset_bottom = 155.0
+text = "T
+"
+
+[node name="statistiche" type="Button" parent="."]
+layout_mode = 0
+offset_left = 990.0
+offset_top = 164.0
+offset_right = 1070.0
+offset_bottom = 225.0
+text = "S
+"
+
+[connection signal="pressed" from="indietro" to="indietro" method="_on_pressed"]
