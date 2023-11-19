@@ -157,7 +157,6 @@ text = "S
 "
 
 [connection signal="pressed" from="indietro" to="indietro" method="_on_pressed"]
-[connection signal="pressed" from="indietro" to="ColorRect/riprendi" method="_on_indietro_pressed"]
 [connection signal="pressed" from="nuova partita" to="nuova partita" method="_on_pressed"]
 [connection signal="pressed" from="ColorRect/riprendi" to="ColorRect/riprendi" method="_on_pressed"]
 [connection signal="pressed" from="ColorRect/riprendi2" to="ColorRect/riprendi2" method="_on_pressed"]
