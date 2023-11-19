@@ -4,14 +4,14 @@ importer="wavefront_obj"
 importer_version=1
 type="Mesh"
 uid="uid://j7vi84hps4om"
-path="res://.godot/imported/mapsExample.obj-2690db7511a061895569975eb47dd667.mesh"
+path="res://.godot/imported/mapsExample.obj-9fde3846bd7bbea1a6b2a7b20cc481bf.mesh"
 
 [deps]
 
-files=["res://.godot/imported/mapsExample.obj-2690db7511a061895569975eb47dd667.mesh"]
+files=["res://.godot/imported/mapsExample.obj-9fde3846bd7bbea1a6b2a7b20cc481bf.mesh"]
 
-source_file="res://UI interface/godot mappa/mapsExample.obj"
-dest_files=["res://.godot/imported/mapsExample.obj-2690db7511a061895569975eb47dd667.mesh", "res://.godot/imported/mapsExample.obj-2690db7511a061895569975eb47dd667.mesh"]
+source_file="res://menu/script/UI interface/godot mappa/mapsExample.obj"
+dest_files=["res://.godot/imported/mapsExample.obj-9fde3846bd7bbea1a6b2a7b20cc481bf.mesh", "res://.godot/imported/mapsExample.obj-9fde3846bd7bbea1a6b2a7b20cc481bf.mesh"]
 
 [params]
 

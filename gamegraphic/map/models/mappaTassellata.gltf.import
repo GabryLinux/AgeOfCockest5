@@ -3,7 +3,7 @@
 importer="scene"
 importer_version=1
 type="PackedScene"
-uid="uid://d2yjmmainquvi"
+uid="uid://dflpu3drmvc06"
 path="res://.godot/imported/mappaTassellata.gltf-8d38ae913afdd840c32071e4c3f31131.scn"
 
 [deps]
@@ -13,7 +13,7 @@ dest_files=["res://.godot/imported/mappaTassellata.gltf-8d38ae913afdd840c32071e4
 
 [params]
 
-nodes/root_type="Node3D"
+nodes/root_type="MeshInstance3D"
 nodes/root_name="Scene Root"
 nodes/apply_root_scale=true
 nodes/root_scale=1.0

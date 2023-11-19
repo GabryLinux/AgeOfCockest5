@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://cvxgmt3q22s2a"
-path="res://.godot/imported/nuovaMappaExample.gltf-ce3e318a7b877bc3fee64e0221ce654b.scn"
+path="res://.godot/imported/nuovaMappaExample.gltf-91f70605765a2a1870ca1d6e47a48f2c.scn"
 
 [deps]
 
-source_file="res://UI interface/godot mappa/nuovaMappaExample.gltf"
-dest_files=["res://.godot/imported/nuovaMappaExample.gltf-ce3e318a7b877bc3fee64e0221ce654b.scn"]
+source_file="res://menu/script/UI interface/godot mappa/nuovaMappaExample.gltf"
+dest_files=["res://.godot/imported/nuovaMappaExample.gltf-91f70605765a2a1870ca1d6e47a48f2c.scn"]
 
 [params]
 

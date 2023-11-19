@@ -1,35 +1,34 @@
-[gd_scene load_steps=13 format=3 uid="uid://gtiwng3nseko"]
+[gd_scene load_steps=14 format=3 uid="uid://gtiwng3nseko"]
 
 [ext_resource type="Script" path="res://gamegraphic/map/models/selezionaRegione.gd" id="2_83sna"]
 [ext_resource type="ArrayMesh" uid="uid://b4tfqho6q0cub" path="res://gamegraphic/characters/models/cubo.obj" id="3_dqu7i"]
 [ext_resource type="Script" path="res://moving.gd" id="3_kphlq"]
-[ext_resource type="PackedScene" uid="uid://dwkh4ekipl1wo" path="res://gamegraphic/map/models/mapExample.glb" id="3_li2yr"]
-[ext_resource type="PackedScene" uid="uid://dypu1kw0du3ps" path="res://gamegraphic/map/models/mapExample.gltf" id="4_8ogas"]
+[ext_resource type="PackedScene" uid="uid://dwkh4ekipl1wo" path="res://menu/script/UI interface/godot mappa/mapExample.glb" id="3_li2yr"]
+[ext_resource type="PackedScene" uid="uid://dypu1kw0du3ps" path="res://menu/script/UI interface/godot mappa/mapExample.gltf" id="4_8ogas"]
 [ext_resource type="Script" path="res://gamegraphic/characters/script/Cubo.gd" id="4_u08fi"]
-[ext_resource type="PackedScene" uid="uid://cvxgmt3q22s2a" path="res://gamegraphic/map/models/nuovaMappaExample.gltf" id="5_2lqjg"]
-[ext_resource type="PackedScene" uid="uid://d2yjmmainquvi" path="res://gamegraphic/map/models/mappaTassellata.gltf" id="7_yue3m"]
+[ext_resource type="PackedScene" uid="uid://cvxgmt3q22s2a" path="res://menu/script/UI interface/godot mappa/nuovaMappaExample.gltf" id="5_2lqjg"]
+[ext_resource type="ArrayMesh" uid="uid://ctpxwati7yejd" path="res://gamegraphic/map/models/mappaPulita.obj" id="7_3i86k"]
+[ext_resource type="PackedScene" uid="uid://dflpu3drmvc06" path="res://gamegraphic/map/models/mappaTassellata.gltf" id="9_7mo13"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_ajjli"]
 sky_top_color = Color(0.819608, 0.85098, 0.898039, 1)
+sun_angle_max = 30.6
 
 [sub_resource type="Sky" id="Sky_xim0i"]
 sky_material = SubResource("ProceduralSkyMaterial_ajjli")
 
 [sub_resource type="Environment" id="Environment_eylya"]
 background_mode = 2
+background_energy_multiplier = 1.07
 sky = SubResource("Sky_xim0i")
 ambient_light_source = 3
 ambient_light_color = Color(0.615686, 0.615686, 0.615686, 1)
-ambient_light_energy = 3.53
+ambient_light_energy = 2.3
 
 [sub_resource type="CameraAttributesPhysical" id="CameraAttributesPhysical_vrgre"]
 
 [node name="Node3D" type="Node3D"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -79.0213)
-
-[node name="mappaTassellata" parent="." instance=ExtResource("7_yue3m")]
-transform = Transform3D(100, 0, 0, 0, 100, 0, 0, 0, 100, 0, 0, 83.5253)
-script = ExtResource("2_83sna")
 
 [node name="Cubo" type="MeshInstance3D" parent="."]
 transform = Transform3D(0.25, 0, 0, 0, 0.25, 0, 0, 0, 0.25, 0, 0, 0)
@@ -44,9 +43,11 @@ fov = 45.0
 script = ExtResource("3_kphlq")
 
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.67667, 297.418, 16.5697)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 12.2284, 42.7428, 91.0852)
 visible = false
-light_energy = 10.859
+light_color = Color(1, 1, 0.258824, 1)
+light_energy = 5.547
+light_indirect_energy = 1.505
 light_bake_mode = 1
 
 [node name="mapExample" parent="." instance=ExtResource("3_li2yr")]
@@ -64,4 +65,11 @@ camera_attributes = SubResource("CameraAttributesPhysical_vrgre")
 transform = Transform3D(-20, 1.74846e-06, 0, -1.74846e-06, -20, 0, 0, 0, 20, 4.19858, -1.60118, -1.22221)
 visible = false
 
-[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+[node name="MappaTassellata" type="MeshInstance3D" parent="."]
+transform = Transform3D(50, 0, 0, 0, 50, 0, 0, 0, 50, 0, 0, 83.7887)
+mesh = ExtResource("7_3i86k")
+script = ExtResource("2_83sna")
+
+[node name="mappaTassellata" parent="." instance=ExtResource("9_7mo13")]
+transform = Transform3D(50, 0, 0, 0, 50, 0, 0, 0, 50, 0, 0, 99.6473)
+visible = false
