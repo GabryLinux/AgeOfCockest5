@@ -1,4 +1,4 @@
-[gd_scene load_steps=13 format=3 uid="uid://bpkinu8ur6e4h"]
+[gd_scene load_steps=13 format=3 uid="uid://gtiwng3nseko"]
 
 [ext_resource type="Script" path="res://gamegraphic/map/models/selezionaRegione.gd" id="2_83sna"]
 [ext_resource type="ArrayMesh" uid="uid://b4tfqho6q0cub" path="res://gamegraphic/characters/models/cubo.obj" id="3_dqu7i"]

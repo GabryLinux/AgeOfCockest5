@@ -11,7 +11,7 @@ config_version=5
 [application]
 
 config/name="AgeOfConquest5"
-run/main_scene="res://node_2d.tscn"
+run/main_scene="res://menu/script/UI interface/main menu/Main menu.tscn"
 config/features=PackedStringArray("4.1", "Mobile")
 config/icon="res://icon.svg"
 
