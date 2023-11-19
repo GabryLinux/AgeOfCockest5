@@ -1,9 +1,9 @@
 [gd_scene load_steps=5 format=3 uid="uid://u7ht22v8wx7i"]
 
-[ext_resource type="Script" path="res://UI interface/main menu/single player menu/single player.gd" id="1_pylpn"]
-[ext_resource type="Script" path="res://UI interface/main menu/multigiocatore/multigiocatore.gd" id="2_m35a8"]
-[ext_resource type="Script" path="res://UI interface/main menu/crediti/credits.gd" id="2_yb5yo"]
-[ext_resource type="Script" path="res://UI interface/main menu/impostazioni/impostazioni.gd" id="3_sk4ar"]
+[ext_resource type="Script" path="res://menu/script/UI interface/main menu/single player menu/single player.gd" id="1_pylpn"]
+[ext_resource type="Script" path="res://menu/script/UI interface/main menu/multigiocatore/multigiocatore.gd" id="2_m35a8"]
+[ext_resource type="Script" path="res://menu/script/UI interface/main menu/crediti/credits.gd" id="2_yb5yo"]
+[ext_resource type="Script" path="res://menu/script/UI interface/main menu/impostazioni/impostazioni.gd" id="3_sk4ar"]
 
 [node name="main menu" type="Control"]
 layout_mode = 3

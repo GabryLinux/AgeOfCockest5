@@ -1,6 +1,7 @@
-[gd_scene load_steps=2 format=3 uid="uid://cptv8aymmk66d"]
+[gd_scene load_steps=3 format=3 uid="uid://cptv8aymmk66d"]
 
-[ext_resource type="Script" path="res://UI interface/main menu/single player menu/indietro.gd" id="1_6bi33"]
+[ext_resource type="Script" path="res://menu/script/UI interface/main menu/single player menu/indietro.gd" id="1_6bi33"]
+[ext_resource type="Script" path="res://menu/script/UI interface/main menu/single player menu/entraScena.gd" id="2_vrg6n"]
 
 [node name="Control" type="Control"]
 layout_mode = 3
@@ -39,6 +40,7 @@ offset_bottom = -166.0
 grow_horizontal = 2
 grow_vertical = 2
 text = "Nuova partita"
+script = ExtResource("2_vrg6n")
 
 [node name="ColorRect" type="ColorRect" parent="."]
 layout_mode = 0
@@ -88,6 +90,7 @@ offset_bottom = -35.5
 grow_horizontal = 0
 grow_vertical = 2
 text = "R"
+script = ExtResource("2_vrg6n")
 
 [node name="elimina" type="Button" parent="ColorRect"]
 layout_mode = 1
@@ -118,6 +121,7 @@ offset_bottom = 30.5
 grow_horizontal = 0
 grow_vertical = 2
 text = "R"
+script = ExtResource("2_vrg6n")
 
 [node name="elimina2" type="Button" parent="ColorRect"]
 layout_mode = 1
@@ -153,3 +157,6 @@ text = "S
 "
 
 [connection signal="pressed" from="indietro" to="indietro" method="_on_pressed"]
+[connection signal="pressed" from="indietro" to="ColorRect/riprendi" method="_on_indietro_pressed"]
+[connection signal="button_down" from="ColorRect/riprendi" to="ColorRect/riprendi" method="_on_button_down"]
+[connection signal="pressed" from="ColorRect/riprendi" to="ColorRect/riprendi" method="_on_pressed"]

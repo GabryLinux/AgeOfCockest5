@@ -1,6 +1,6 @@
 [gd_scene load_steps=2 format=3 uid="uid://cor5rwj8pvnsn"]
 
-[ext_resource type="Script" path="res://UI interface/main menu/single player menu/indietro.gd" id="1_v0b3k"]
+[ext_resource type="Script" path="res://menu/script/UI interface/main menu/single player menu/indietro.gd" id="1_v0b3k"]
 
 [node name="Control" type="Control"]
 layout_mode = 3
