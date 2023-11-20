@@ -1,4 +1,4 @@
-[gd_scene load_steps=14 format=3 uid="uid://gtiwng3nseko"]
+[gd_scene load_steps=15 format=3 uid="uid://gtiwng3nseko"]
 
 [ext_resource type="Script" path="res://gamegraphic/map/models/selezionaRegione.gd" id="2_83sna"]
 [ext_resource type="ArrayMesh" uid="uid://b4tfqho6q0cub" path="res://gamegraphic/characters/models/cubo.obj" id="3_dqu7i"]
@@ -9,6 +9,7 @@
 [ext_resource type="PackedScene" uid="uid://cvxgmt3q22s2a" path="res://menu/script/UI interface/godot mappa/nuovaMappaExample.gltf" id="5_2lqjg"]
 [ext_resource type="ArrayMesh" uid="uid://ctpxwati7yejd" path="res://gamegraphic/map/models/mappaPulita.obj" id="7_3i86k"]
 [ext_resource type="PackedScene" uid="uid://dflpu3drmvc06" path="res://gamegraphic/map/models/mappaTassellata.gltf" id="9_7mo13"]
+[ext_resource type="Script" path="res://gamegraphic/UI/script/indietro3.gd" id="10_tnttn"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_ajjli"]
 sky_top_color = Color(0.819608, 0.85098, 0.898039, 1)
@@ -28,7 +29,7 @@ ambient_light_energy = 2.3
 [sub_resource type="CameraAttributesPhysical" id="CameraAttributesPhysical_vrgre"]
 
 [node name="Node3D" type="Node3D"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -79.0213)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.60536, -0.00722551, -70.0761)
 
 [node name="Cubo" type="MeshInstance3D" parent="."]
 transform = Transform3D(0.25, 0, 0, 0, 0.25, 0, 0, 0, 0.25, 0, 0, 0)
@@ -73,3 +74,14 @@ script = ExtResource("2_83sna")
 [node name="mappaTassellata" parent="." instance=ExtResource("9_7mo13")]
 transform = Transform3D(50, 0, 0, 0, 50, 0, 0, 0, 50, 0, 0, 99.6473)
 visible = false
+
+[node name="indietro3" type="Button" parent="."]
+offset_left = 67.0
+offset_top = 77.0
+offset_right = 328.0
+offset_bottom = 159.0
+theme_override_font_sizes/font_size = 40
+text = "<---"
+script = ExtResource("10_tnttn")
+
+[connection signal="pressed" from="indietro3" to="indietro3" method="_on_pressed"]
