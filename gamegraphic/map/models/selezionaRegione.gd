@@ -22,7 +22,7 @@ func animateGlowingEffect(material):
 # Called when the node enters the scene tree for the first time.
 func _ready():
 
-	var material = mesh.surface_get_material(32)
+	var material = mesh.surface_get_material(45)
 	animateGlowingEffect(material)
 
 	#print()
