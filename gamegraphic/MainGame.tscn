@@ -1,4 +1,4 @@
-[gd_scene load_steps=15 format=3 uid="uid://gtiwng3nseko"]
+[gd_scene load_steps=21 format=3 uid="uid://gtiwng3nseko"]
 
 [ext_resource type="Script" path="res://gamegraphic/map/models/selezionaRegione.gd" id="2_83sna"]
 [ext_resource type="ArrayMesh" uid="uid://b4tfqho6q0cub" path="res://gamegraphic/characters/models/cubo.obj" id="3_dqu7i"]
@@ -10,6 +10,12 @@
 [ext_resource type="ArrayMesh" uid="uid://ctpxwati7yejd" path="res://gamegraphic/map/models/mappaPulita.obj" id="7_3i86k"]
 [ext_resource type="PackedScene" uid="uid://dflpu3drmvc06" path="res://gamegraphic/map/models/mappaTassellata.gltf" id="9_7mo13"]
 [ext_resource type="Script" path="res://gamegraphic/UI/script/indietro3.gd" id="10_tnttn"]
+[ext_resource type="Script" path="res://gamegraphic/menu profilo.gd" id="11_0k8ab"]
+[ext_resource type="Script" path="res://gamegraphic/Window.gd" id="12_kryih"]
+[ext_resource type="Script" path="res://gamegraphic/menu monete.gd" id="12_qniy3"]
+[ext_resource type="Script" path="res://gamegraphic/menu di recap.gd" id="13_5kdra"]
+[ext_resource type="Script" path="res://gamegraphic/menu diplomazie.gd" id="13_qy062"]
+[ext_resource type="Script" path="res://gamegraphic/info.gd" id="14_obfwb"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_ajjli"]
 sky_top_color = Color(0.819608, 0.85098, 0.898039, 1)
@@ -38,7 +44,7 @@ mesh = ExtResource("3_dqu7i")
 script = ExtResource("4_u08fi")
 
 [node name="Camera3D" type="Camera3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 0.5, 0.866025, 0, -0.866025, 0.5, 22.444, 32.7174, 118.653)
+transform = Transform3D(1, 0, 0, 0, 0.5, 0.866025, 0, -0.866025, 0.5, 11.4992, 18.4383, 102.777)
 current = true
 fov = 45.0
 script = ExtResource("3_kphlq")
@@ -76,12 +82,107 @@ transform = Transform3D(50, 0, 0, 0, 50, 0, 0, 0, 50, 0, 0, 99.6473)
 visible = false
 
 [node name="indietro3" type="Button" parent="."]
-offset_left = 67.0
-offset_top = 77.0
-offset_right = 328.0
-offset_bottom = 159.0
+offset_left = -1.0
+offset_top = 1.0
+offset_right = 114.0
+offset_bottom = 83.0
 theme_override_font_sizes/font_size = 40
 text = "<---"
 script = ExtResource("10_tnttn")
 
+[node name="profilo" type="Button" parent="."]
+offset_left = 987.0
+offset_top = -1.0
+offset_right = 1151.0
+offset_bottom = 60.0
+text = "profilo"
+
+[node name="menu profilo" type="Window" parent="profilo"]
+title = "profilo"
+position = Vector2i(750, 30)
+size = Vector2i(400, 400)
+visible = false
+script = ExtResource("11_0k8ab")
+
+[node name="monete e tasse" type="Button" parent="."]
+offset_left = 527.0
+offset_right = 759.0
+offset_bottom = 45.0
+text = "monete"
+
+[node name="menu monete" type="Window" parent="monete e tasse"]
+title = "menu monete"
+position = Vector2i(350, 75)
+size = Vector2i(500, 500)
+visible = false
+script = ExtResource("12_qniy3")
+
+[node name="recap" type="Button" parent="."]
+offset_left = 1081.0
+offset_top = 588.0
+offset_right = 1150.0
+offset_bottom = 651.0
+text = "R"
+
+[node name="menu di recap" type="Window" parent="recap"]
+title = "menu di recap"
+position = Vector2i(350, 75)
+size = Vector2i(500, 500)
+visible = false
+script = ExtResource("13_5kdra")
+
+[node name="gestione diplomazie" type="Button" parent="."]
+offset_left = 1083.0
+offset_top = 489.0
+offset_right = 1153.0
+offset_bottom = 550.0
+text = "D"
+
+[node name="menu diplomazie" type="Window" parent="gestione diplomazie"]
+title = "diplomazie"
+position = Vector2i(350, 75)
+size = Vector2i(500, 500)
+visible = false
+script = ExtResource("13_qy062")
+
+[node name="informazioni" type="Button" parent="."]
+offset_left = -2.0
+offset_top = 579.0
+offset_right = 64.0
+offset_bottom = 646.0
+text = "I"
+
+[node name="menu informazioni" type="Window" parent="informazioni"]
+title = "menu info"
+position = Vector2i(350, 75)
+size = Vector2i(500, 500)
+visible = false
+script = ExtResource("14_obfwb")
+
+[node name="messaggi" type="Button" parent="."]
+offset_left = 1099.0
+offset_top = 86.0
+offset_right = 1149.0
+offset_bottom = 133.0
+text = "M"
+
+[node name="menu messaggi" type="Window" parent="messaggi"]
+title = "Messaggi"
+position = Vector2i(350, 75)
+size = Vector2i(500, 500)
+visible = false
+script = ExtResource("12_kryih")
+
 [connection signal="pressed" from="indietro3" to="indietro3" method="_on_pressed"]
+[connection signal="pressed" from="profilo" to="profilo/menu profilo" method="_on_profilo_pressed"]
+[connection signal="close_requested" from="profilo/menu profilo" to="profilo/menu profilo" method="_on_close_requested"]
+[connection signal="pressed" from="monete e tasse" to="monete e tasse/menu monete" method="_on_monete_e_tasse_pressed"]
+[connection signal="close_requested" from="monete e tasse/menu monete" to="monete e tasse/menu monete" method="_on_close_requested"]
+[connection signal="pressed" from="recap" to="recap/menu di recap" method="_on_recap_pressed"]
+[connection signal="close_requested" from="recap/menu di recap" to="recap/menu di recap" method="_on_close_requested"]
+[connection signal="pressed" from="gestione diplomazie" to="gestione diplomazie/menu diplomazie" method="_on_gestione_diplomazie_pressed"]
+[connection signal="close_requested" from="gestione diplomazie/menu diplomazie" to="gestione diplomazie/menu diplomazie" method="_on_close_requested"]
+[connection signal="pressed" from="informazioni" to="informazioni/menu informazioni" method="_on_informazioni_pressed"]
+[connection signal="close_requested" from="informazioni/menu informazioni" to="informazioni/menu informazioni" method="_on_close_requested"]
+[connection signal="pressed" from="messaggi" to="messaggi/menu messaggi" method="_on_messaggi_pressed"]
+[connection signal="close_requested" from="messaggi/menu messaggi" to="messaggi/menu messaggi" method="_on_close_requested"]
