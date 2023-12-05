@@ -38,13 +38,12 @@ ambient_light_energy = 2.3
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.60536, -0.00722551, -70.0761)
 
 [node name="Cubo" type="MeshInstance3D" parent="."]
-transform = Transform3D(0.25, 0, 0, 0, 0.25, 0, 0, 0, 0.25, 0, 0, 0)
-visible = false
+transform = Transform3D(0.1, 0, 0, 0, 0.1, 0, 0, 0, 0.1, 0, 0, 0)
 mesh = ExtResource("3_dqu7i")
 script = ExtResource("4_u08fi")
 
 [node name="Camera3D" type="Camera3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 0.5, 0.866025, 0, -0.866025, 0.5, 11.4992, 18.4383, 102.777)
+transform = Transform3D(1, 0, 0, 0, 0.5, 0.866025, 0, -0.866025, 0.5, 21.5448, 36.3267, 119.087)
 current = true
 fov = 45.0
 script = ExtResource("3_kphlq")
@@ -71,11 +70,6 @@ camera_attributes = SubResource("CameraAttributesPhysical_vrgre")
 [node name="nuovaMappaExample" parent="." instance=ExtResource("5_2lqjg")]
 transform = Transform3D(-20, 1.74846e-06, 0, -1.74846e-06, -20, 0, 0, 0, 20, 4.19858, -1.60118, -1.22221)
 visible = false
-
-[node name="MappaTassellata" type="MeshInstance3D" parent="."]
-transform = Transform3D(50, 0, 0, 0, 50, 0, 0, 0, 50, 0, 0, 83.7887)
-mesh = ExtResource("7_3i86k")
-script = ExtResource("2_83sna")
 
 [node name="mappaTassellata" parent="." instance=ExtResource("9_7mo13")]
 transform = Transform3D(50, 0, 0, 0, 50, 0, 0, 0, 50, 0, 0, 99.6473)
@@ -172,6 +166,11 @@ position = Vector2i(350, 75)
 size = Vector2i(500, 500)
 visible = false
 script = ExtResource("12_kryih")
+
+[node name="MappaTassellata" type="MeshInstance3D" parent="."]
+transform = Transform3D(100, 0, 0, 0, 100, 0, 0, 0, 100, 2, 0, 70)
+mesh = ExtResource("7_3i86k")
+script = ExtResource("2_83sna")
 
 [connection signal="pressed" from="indietro3" to="indietro3" method="_on_pressed"]
 [connection signal="pressed" from="profilo" to="profilo/menu profilo" method="_on_profilo_pressed"]

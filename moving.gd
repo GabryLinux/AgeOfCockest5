@@ -77,9 +77,9 @@ func mouseDrag(event):
 		
 		#print(event.get_relative())
 		var delta = event.get_relative() as Vector2
-		camera.position.x -= delta.x / fattore
-		camera.position.z -= delta.y / fattore
-	
+		var x = camera.position.x - delta.x / fattore
+		var z = camera.position.z - delta.y / fattore
+		camera.set_position(Vector3(x,camera.position.y,z))
 	return
 
 
