@@ -6,7 +6,8 @@ extends Camera3D
 const passo = 0.5
 
 # fattore di divisione per il mouseDrag (normalmente le componenti del vettore sono troppo grandi)
-const fattore = 10
+# diminuisco fattore -> aumento la velocità
+const fattore = 40
 
 # flag che si alza quando premo il MouseButton, si abbassa quando lo rilascio
 var clickPressed = false

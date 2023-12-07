@@ -2,7 +2,7 @@ extends MeshInstance3D
 
 
 const FEATURE_EMISSION = 1
-var polygonSelected = 45
+
 const RAY_LENGTH = 5
 var SCALE_FACTOR = self.scale.x
 const DEGTORAD = 0.0174533
@@ -41,8 +41,7 @@ func _ready():
 	generateCollisionShape2(mesh)
 	
 	print(arraySHAPES)
-	var material = mesh.surface_get_material(polygonSelected)
-	animateGlowingEffect(material)
+	
 	arrayCentri = centersCalculation(mesh)
 	drawPoints(arrayCentri)
 	
@@ -259,11 +258,11 @@ func mouse3DProjectedPosition(mousePosition: Vector2):
 	params.hit_from_inside = true
 	#print(from, " -> ", to)
 	var rayArray = spaceState.intersect_ray(params)
-	add_child(await line(from, to))
+	#add_child(await line(from, to))
 	#print(rayArray)
 	if rayArray:
 		return rayArray
-	return Vector3(0,0,0)
+	return Dictionary()
 
 
 func line(pos1: Vector3, pos2: Vector3, color = Color.WHITE_SMOKE, persist_ms = 0) -> MeshInstance3D :
@@ -293,6 +292,8 @@ func line(pos1: Vector3, pos2: Vector3, color = Color.WHITE_SMOKE, persist_ms = 
 
 func restoreMaterial(region):
 	if STARTING_MATERIAL != null:
+		if tween != null:
+			tween.stop()
 		var mat = mesh.surface_get_material(region)
 		mat.emission = STARTING_MATERIAL
 		mesh.surface_set_material(region, mat) 
@@ -312,17 +313,19 @@ func _input(event):
 		#print(regione)
 		var collision = await mouse3DProjectedPosition(event.position)
 		
+		restoreMaterial(ACTUAL_REGION_SELECTED)
 		
 		
 		#var collider = collision["collider"] as StaticBody3D
-		if collision != null:
+		if collision != Dictionary():
 			var id_collision = findIndexFromID(instance_from_id(collision["collider_id"]).get_instance_id())
-			restoreMaterial(ACTUAL_REGION_SELECTED)
+			
 			ACTUAL_REGION_SELECTED = id_collision
 			var material = mesh.surface_get_material(ACTUAL_REGION_SELECTED)
 			
 			animateGlowingEffect(material)
-		
+		else: 
+			restoreMaterial(ACTUAL_REGION_SELECTED)
 		pass
 		
 		
